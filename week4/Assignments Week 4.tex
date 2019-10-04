@@ -1,0 +1,27 @@
+\documentclass[]{article}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{float}
+
+%opening
+\title{Operating Systems Problem session 4}
+\author{Dibran Dokter 1047390 \& Marnix Lukasse 1047400}
+
+\begin{document}
+
+\maketitle
+
+\subsection*{8.1}
+
+Internal fragmentation is fragmentation in the process itself, it has been allocated more memory than it is currently using. Thus it has a gap between the used memory and the allocated memory.
+External fragmentation is fragmentation between processes. There is a gap between the allocated space of multiple processes that could be filled. These gaps might however be quite small, so small that they can't be used by any other processes that require more space.
+
+\subsection*{8.3}
+
+Only best-fit can fit all the processes. Using first-fit or worst-fit results in an allocation that cannot fit the process of 426KB as the last process to allocate.
+
+\subsection*{8.18}
+
+Segmentation uses different chunks of memory and therefore external fragmentation could be a risk. Paging avoids external fragmentation and thus requires no compaction. So its a good combination, we end up with some internal fragmentation, but this is more desirable then external fragmentation.
+
+\end{document}
