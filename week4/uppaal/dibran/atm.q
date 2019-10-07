@@ -19,8 +19,3 @@ A[] (Eric.READY and ATM.READY) imply ATM.in_till >= 0
 
 */
 A[] not deadlock
-
-/*
-
-*/
-//NO_QUERY
