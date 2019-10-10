@@ -3,7 +3,7 @@
 /*
 
 */
-A[] not (Reader2.READING and Writer1.WRITING)
+A[] not (Writer1.WRITING and Writer2.WRITING)
 
 /*
 
