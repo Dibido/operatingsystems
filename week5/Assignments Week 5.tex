@@ -50,9 +50,13 @@ A while later we may want to access that piece of data again. This time it is st
 
 \subsection*{9.18}
 
+The question was a little bit confusing, as it speaks of two time values (20 milliseconds and 1 microsecond) and three type of operations (80\%, 18\%, 2\%).\\
+
+We assumed that 80+18\% of operations only take 1 microsecond, and 2\% of total operations take 20 milliseconds to complete.\\
+
 Using this formula to calculate the time:\\
-effective access time = $(1 - p) \cdot ma + p \cdot page fault time$.
-where $p$ = page fault probability, $ma$ = memory-access time.
+effective access time = $(1 - p) \cdot ma + p \cdot page fault time$.\\
+where $p$ = page fault probability, $ma$ = memory-access time.\\
 
 In this case : $(1 - 0.02) \cdot 1 + 0.02 \cdot 20000$
 Which is : 400.98 microseconds.
